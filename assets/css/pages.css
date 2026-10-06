@@ -211,3 +211,14 @@
 @media (max-width: 22.5rem) {
   .space-page__container { width: min(100% - 2rem, 70rem); }
 }
+
+.contact-page { padding-block: clamp(2.5rem, 5vw, 3.5rem); }
+.contact-page__container { width: min(100% - 2.5rem, 70rem); margin-inline: auto; }
+.contact-page__layout { display: grid; gap: 1.75rem; align-items: center; }
+.contact-page__copy { max-width: 34rem; }.contact-page__copy .eyebrow { margin-bottom: .75rem; }
+.contact-page__copy h1 { max-width: 15ch; font-size: clamp(2.125rem, 4vw, 3.25rem); line-height: 1.12; }
+.contact-page__copy > p { margin-top: 1.25rem; font-size: clamp(1rem, 1.5vw, 1.125rem); line-height: 1.6; }
+.contact-page__person { display: grid; gap: .25rem; margin-top: 1.5rem; color: var(--color-brand-deep); }.contact-page__person a { font-size: 1.0625rem; font-weight: 600; }
+.contact-page__actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }.contact-page__action { display: inline-flex; min-height: 3rem; align-items: center; justify-content: center; padding-inline: 1.25rem; border: 1px solid var(--color-brand); border-radius: 999px; font-size: .875rem; font-weight: 700; text-decoration: none; }.contact-page__action--primary { background: var(--color-brand-deep); color: var(--color-surface); }.contact-page__action--secondary { color: var(--color-brand-deep); }.contact-page__image { justify-self: center; width: min(100%, 22.5rem); height: auto; border-radius: 1.125rem; }
+.contact-page__panel-wrap { margin-top: 2rem; }.contact-page__panel { max-width: 60rem; padding: clamp(1.75rem, 4vw, 2.25rem); border-radius: 1.25rem; background: var(--color-brand-deep); color: var(--color-surface); }.contact-page__panel h2 { font-size: clamp(1.5rem, 3vw, 1.875rem); line-height: 1.2; }.contact-page__panel p { max-width: 42rem; margin-top: .75rem; color: rgb(255 250 244 / .88); font-size: clamp(.9375rem, 1.5vw, 1rem); line-height: 1.6; }
+@media (min-width: 48rem) { .contact-page__layout { grid-template-columns: minmax(0, 1.35fr) minmax(16rem, .65fr); gap: 3rem; }.contact-page__image { justify-self: end; } }
