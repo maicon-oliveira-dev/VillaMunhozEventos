@@ -1,0 +1,8 @@
+# Masters originais: manter fora do repositório, sem afetar derivados web publicados.
+**/*.[Hh][Ee][Ii][Cc]
+**/*.[Mm][Oo][Vv]
+**/*.[Zz][Ii][Pp]
+
+# Derivados intermediários grandes: manter localmente, sem publicar.
+/assets/img/video_pagina_espaco/apresentacao-espaco.mp4
+/assets/img/video_eventos/video-eventos.mp4

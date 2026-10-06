@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Villa Munhoz — espaço para eventos.">
+    <title>Villa Munhoz | Espaço para eventos</title>
+    <link rel="stylesheet" href="assets/css/tokens.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/menu.js" defer></script>
+    <script src="assets/js/intro-carousel.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-brand" href="index.html" aria-label="Villa Munhoz Eventos — página inicial">
+          <img
+            class="site-brand__logo"
+            src="assets/img/logo/Logo%20Villa%20Munhoz%20Eventos%20com%20arabescos%20entalhados.png"
+            width="1254"
+            height="1254"
+            alt="Villa Munhoz Eventos"
+          >
+        </a>
+        <nav class="site-nav" aria-label="Navegação principal">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="index.html" aria-current="page">Início</a></li>
+            <li><a class="site-nav__link" href="pages/espaco.html">O Espaço</a></li>
+            <li><a class="site-nav__link" href="pages/eventos.html">Eventos</a></li>
+            <li><a class="site-nav__link" href="pages/galeria.html">Galeria</a></li>
+            <li><a class="site-nav__link" href="pages/contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <button class="menu-button" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu">
+          <span class="menu-button__icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Navegação móvel" hidden>
+        <div class="container mobile-menu__inner">
+          <ul class="mobile-menu__list">
+            <li><a class="mobile-menu__link" href="index.html" aria-current="page">Início</a></li>
+            <li><a class="mobile-menu__link" href="pages/espaco.html">O Espaço</a></li>
+            <li><a class="mobile-menu__link" href="pages/eventos.html">Eventos</a></li>
+            <li><a class="mobile-menu__link" href="pages/galeria.html">Galeria</a></li>
+            <li><a class="mobile-menu__link" href="pages/contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section class="home-hero" aria-labelledby="hero-title">
+        <picture class="home-hero__media">
+          <img
+            class="home-hero__image"
+            src="assets/img/img/Img_trabalhada_web/Jardim_home_01_teste.png"
+            width="1672"
+            height="941"
+            alt="Jardim da Villa Munhoz preparado para evento, com árvores, esferas suspensas e mesa de recepção"
+            loading="eager"
+            fetchpriority="high"
+          >
+        </picture>
+        <div class="container home-hero__copy">
+          <p class="eyebrow">Villa Munhoz</p>
+          <h1 id="hero-title">Um lugar para celebrar do seu jeito.</h1>
+          <p class="intro">Um espaço para encontros que pedem presença, acolhimento e liberdade para criar.</p>
+          <div class="home-actions">
+            <a class="button" href="pages/espaco.html">Conheça o espaço</a>
+            <a class="text-link" href="pages/contato.html">Converse sobre seu evento</a>
+          </div>
+        </div>
+      </section>
+      <section class="home-intro container" aria-labelledby="intro-title">
+        <div class="home-intro__copy">
+          <p class="eyebrow">O espaço</p>
+          <h2 id="intro-title">Um cenário para reunir pessoas.</h2>
+          <p>Salão, varanda e jardim compõem o cenário do seu evento. A locação permite organizar a celebração com os fornecedores que você escolher.</p>
+          <a class="text-link" href="pages/espaco.html">Conheça o espaço</a>
+        </div>
+        <div class="intro-carousel" data-carousel tabindex="0" aria-label="Ambientes da Villa Munhoz">
+          <div class="intro-carousel__viewport">
+            <div class="intro-carousel__track" id="intro-carousel-track">
+              <figure class="intro-carousel__slide" data-carousel-slide>
+                <img src="assets/img/img/img_section_02/Varanda%20de%20tijolos%20entre%20%C3%A1rvores.png" width="1536" height="1024" alt="Varanda de madeira diante da fachada de tijolos, entre árvores" loading="lazy">
+                <figcaption>
+                  <span class="intro-carousel__eyebrow">Varanda</span>
+                  <strong>Entre o salão e o jardim</strong>
+                  <span>Madeira, tijolos e vegetação em uma mesma paisagem.</span>
+                </figcaption>
+              </figure>
+              <figure class="intro-carousel__slide" data-carousel-slide>
+                <img src="assets/img/img/img_section_02/Sal%C3%A3o%20acolhedor%20de%20madeira%20e%20tijolos.png" width="1536" height="1024" alt="Salão com mesas de madeira, parede de tijolos e luminárias pendentes" loading="lazy">
+                <figcaption>
+                  <span class="intro-carousel__eyebrow">Salão — vista ampla</span>
+                  <strong>Um ambiente para reunir</strong>
+                  <span>A presença da madeira e dos tijolos acompanha a celebração.</span>
+                </figcaption>
+              </figure>
+              <figure class="intro-carousel__slide" data-carousel-slide>
+                <img src="assets/img/img/img_section_02/Sal%C3%A3o%20acolhedor%20com%20mesa%20redonda.png" width="1536" height="1024" alt="Mesa redonda de madeira no salão da Villa Munhoz" loading="lazy">
+                <figcaption>
+                  <span class="intro-carousel__eyebrow">Salão — mesa redonda</span>
+                  <strong>Detalhes que acolhem</strong>
+                  <span>Uma nova perspectiva do espaço onde os encontros acontecem.</span>
+                </figcaption>
+              </figure>
+              <figure class="intro-carousel__slide" data-carousel-slide>
+                <img src="assets/img/img/img_section_02/Convidados%20reunidos%20no%20jardim.png" width="1536" height="1024" alt="Convidados reunidos no jardim da Villa Munhoz entre árvores" loading="lazy">
+                <figcaption>
+                  <span class="intro-carousel__eyebrow">Jardim</span>
+                  <strong>Encontros ao ar livre</strong>
+                  <span>O jardim como cenário para compartilhar momentos.</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="intro-carousel__controls" data-carousel-controls hidden>
+            <div class="intro-carousel__navigation">
+              <button class="intro-carousel__arrow" type="button" data-carousel-previous aria-controls="intro-carousel-track" aria-label="Ver imagem anterior">←</button>
+              <button class="intro-carousel__arrow" type="button" data-carousel-next aria-controls="intro-carousel-track" aria-label="Ver próxima imagem">→</button>
+            </div>
+            <div class="intro-carousel__meta">
+              <button class="intro-carousel__toggle" type="button" data-carousel-toggle aria-pressed="false">Pausar</button>
+              <div class="intro-carousel__dots" aria-label="Selecionar imagem">
+                <button type="button" data-carousel-dot aria-label="Ver imagem 1: Varanda" aria-current="true"></button>
+                <button type="button" data-carousel-dot aria-label="Ver imagem 2: Salão — vista ampla"></button>
+                <button type="button" data-carousel-dot aria-label="Ver imagem 3: Salão — mesa redonda"></button>
+                <button type="button" data-carousel-dot aria-label="Ver imagem 4: Jardim"></button>
+              </div>
+              <p class="intro-carousel__counter" aria-hidden="true"><span data-carousel-current>1</span> / 4</p>
+            </div>
+            <p class="visually-hidden" data-carousel-status aria-live="polite" aria-atomic="true">Imagem 1 de 4: Entre o salão e o jardim.</p>
+          </div>
+        </div>
+        <div class="home-intro__contact">
+          <h3>Vamos conversar sobre a sua celebração?</h3>
+          <p>Consulte datas e condições de locação com o responsável.</p>
+        </div>
+      </section>
+      <section class="home-explore" aria-labelledby="explore-title">
+        <div class="container">
+          <div class="home-explore__heading">
+            <h2 id="explore-title">Explore a Villa Munhoz</h2>
+            <p>Conheça o espaço, descubra possibilidades e planeje o seu evento.</p>
+          </div>
+          <div class="explore-grid">
+            <a class="explore-card" href="pages/espaco.html">
+              <img src="assets/img/img/card_section_3/Varanda%20de%20tijolos%20com%20escadaria.png" width="1086" height="1448" alt="Fachada de tijolos da Villa Munhoz, com varanda, escadaria e árvores" loading="lazy" decoding="async">
+              <span class="explore-card__content">
+                <span class="explore-card__title">O Espaço</span>
+                <span class="explore-card__description">Conheça o cenário da sua celebração.</span>
+                <span class="explore-card__call">Explore o espaço ↗</span>
+              </span>
+            </a>
+            <a class="explore-card" href="pages/eventos.html">
+              <img src="assets/img/img/card_section_3/Abra%C3%A7o%20de%20casamento%20no%20deck.png" width="1086" height="1448" alt="Casal em traje de casamento no deck de madeira entre árvores" loading="lazy" decoding="async">
+              <span class="explore-card__content">
+                <span class="explore-card__title">Eventos</span>
+                <span class="explore-card__description">Imagine o seu encontro aqui.</span>
+                <span class="explore-card__call">Conheça as possibilidades ↗</span>
+              </span>
+            </a>
+            <a class="explore-card" href="pages/galeria.html">
+              <img src="assets/img/img/card_section_3/Mesa%20branca%20entre%20%C3%A1rvores%20e%20folhagens.png" width="1086" height="1448" alt="Mesa preparada no jardim, entre árvores, folhagens e deck de madeira" loading="lazy" decoding="async">
+              <span class="explore-card__content">
+                <span class="explore-card__title">Galeria</span>
+                <span class="explore-card__description">Veja o espaço por outros ângulos.</span>
+                <span class="explore-card__call">Veja as fotos ↗</span>
+              </span>
+            </a>
+            <a class="explore-card" href="pages/contato.html">
+              <img src="assets/img/img/card_section_3/Equipe%20sob%20o%20logo%20Villa%20Munhoz%20Eventos.png" width="1086" height="1448" alt="Pessoas diante da entrada da Villa Munhoz, sob a marca do espaço" loading="lazy" decoding="async">
+              <span class="explore-card__content">
+                <span class="explore-card__title">Contato</span>
+                <span class="explore-card__description">Vamos conversar sobre seu evento.</span>
+                <span class="explore-card__call">Entre em contato ↗</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="home-event" aria-labelledby="event-title">
+        <div class="container">
+          <div class="home-event__panel">
+            <div class="home-event__heading">
+              <h2 id="event-title">Seu evento, do seu jeito.</h2>
+              <p>Um espaço para celebrar com liberdade e compor cada detalhe com os fornecedores que você escolher.</p>
+            </div>
+            <div class="home-event__cards">
+              <article class="home-event__card">
+                <h3>Liberdade para organizar</h3>
+                <p>Escolha os fornecedores que fazem sentido para sua celebração e componha o evento com a sua identidade.</p>
+              </article>
+              <article class="home-event__card">
+                <h3>Apoio opcional</h3>
+                <p>Garçons e serviço de bar podem ser contratados separadamente. Consulte disponibilidade e condições.</p>
+              </article>
+            </div>
+            <div class="home-event__cta">
+              <p>Vamos conversar sobre a sua celebração?</p>
+              <div class="home-event__actions">
+                <a class="home-event__action home-event__action--primary" href="https://wa.me/554799667017?text=Ol%C3%A1%2C%20Jonas%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20loca%C3%A7%C3%A3o%20da%20Villa%20Munhoz%20para%20um%20evento." target="_blank" rel="noopener noreferrer" aria-label="Consultar locação pelo WhatsApp (abre em nova aba)">Consultar locação</a>
+                <a class="home-event__action home-event__action--secondary" href="https://www.instagram.com/villamunhoz.eventos/" target="_blank" rel="noopener noreferrer" aria-label="Acompanhe no Instagram (abre em nova aba)">Acompanhe no Instagram ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <a class="site-footer__logo-card" href="index.html" aria-label="Villa Munhoz — início">
+          <img class="site-footer__logo" src="assets/img/logo/Logo%20Villa%20Munhoz%20Eventos%20com%20arabescos%20entalhados.png" width="1254" height="1254" alt="">
+        </a>
+        <nav class="site-footer__nav" aria-label="Navegação do rodapé">
+          <a href="index.html">Início</a>
+          <a href="pages/espaco.html">O Espaço</a>
+          <a href="pages/eventos.html">Eventos</a>
+          <a href="pages/galeria.html">Galeria</a>
+          <a href="pages/contato.html">Contato</a>
+        </nav>
+        <div class="site-footer__actions">
+          <a class="site-footer__action site-footer__action--instagram" href="https://www.instagram.com/villamunhoz.eventos/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abre em nova aba)">
+            <svg class="site-footer__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+            <span>Instagram ↗</span>
+          </a>
+          <a class="site-footer__action site-footer__action--contact" href="https://wa.me/554799667017?text=Ol%C3%A1%2C%20Jonas%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20loca%C3%A7%C3%A3o%20da%20Villa%20Munhoz%20para%20um%20evento." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp — locação (abre em nova aba)">
+            <svg class="site-footer__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5h14v10H9l-4 3v-13Z"></path><path d="M8 9.5h8M8 12.5h5"></path></svg>
+            <span>WhatsApp — locação ↗</span>
+          </a>
+        </div>
+        <div class="site-footer__base">
+          <p>© 2026 Villa Munhoz Eventos.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
