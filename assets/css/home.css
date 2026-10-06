@@ -205,22 +205,12 @@
 .intro-carousel__controls {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   margin-top: var(--space-4);
 }
 
-.intro-carousel__navigation,
 .intro-carousel__dots,
 .intro-carousel__meta { display: flex; align-items: center; }
-
-.intro-carousel__navigation {
-  position: absolute;
-  z-index: 3;
-  inset: 0 0 auto;
-  display: block;
-  aspect-ratio: 4 / 3;
-  pointer-events: none;
-}
 
 .intro-carousel__meta { gap: var(--space-3); }
 .intro-carousel__dots { gap: .125rem; }
@@ -244,7 +234,6 @@
 
 .intro-carousel__toggle:disabled { cursor: not-allowed; opacity: .6; }
 
-.intro-carousel__arrow,
 .intro-carousel__dots button {
   display: inline-grid;
   width: 2.75rem;
@@ -255,24 +244,12 @@
   color: var(--color-surface);
 }
 
-.intro-carousel__arrow:hover,
 .intro-carousel__dots button:hover { background: rgb(82 24 34 / .78); }
 
-.intro-carousel__arrow:focus-visible,
 .intro-carousel__dots button:focus-visible {
   outline-color: var(--color-surface);
   box-shadow: 0 0 0 4px var(--color-brand-deep);
 }
-
-.intro-carousel__arrow {
-  position: absolute;
-  top: 50%;
-  pointer-events: auto;
-  transform: translateY(-50%);
-}
-
-.intro-carousel__arrow:first-child { left: var(--space-3); }
-.intro-carousel__arrow:last-child { right: var(--space-3); }
 
 .intro-carousel__dots button {
   width: 2.75rem;
@@ -566,7 +543,6 @@
   .home-intro { gap: 0; }
   .intro-carousel__viewport { border-radius: 1.25rem; }
   .intro-carousel__slide img { aspect-ratio: 21 / 10; }
-  .intro-carousel__navigation { aspect-ratio: 21 / 10; }
   .intro-carousel figcaption {
     right: clamp(2rem, 3vw, 2.5rem);
     bottom: clamp(2rem, 3vw, 2.5rem);

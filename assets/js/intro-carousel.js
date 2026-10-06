@@ -9,8 +9,6 @@
       const track = carousel.querySelector(".intro-carousel__track");
       const slides = Array.from(carousel.querySelectorAll("[data-carousel-slide]"));
       const controls = carousel.querySelector("[data-carousel-controls]");
-      const previous = carousel.querySelector("[data-carousel-previous]");
-      const next = carousel.querySelector("[data-carousel-next]");
       const dots = Array.from(carousel.querySelectorAll("[data-carousel-dot]"));
       const current = carousel.querySelector("[data-carousel-current]");
       const status = carousel.querySelector("[data-carousel-status]");
@@ -27,7 +25,7 @@
       let userPaused = false;
       let reducedMotion = motionQuery.matches;
 
-      if (!track || !controls || !previous || !next || !current || !status || !toggle || slides.length < 2) return;
+      if (!track || !controls || !dots.length || !current || !status || !toggle || slides.length < 2) return;
 
       carousel.classList.add("is-enhanced");
       controls.hidden = false;
@@ -108,8 +106,6 @@
         showSlide(index, { manual: true });
       }
 
-      previous.addEventListener("click", () => navigate(activeIndex - 1));
-      next.addEventListener("click", () => navigate(activeIndex + 1));
       dots.forEach((dot, index) => dot.addEventListener("click", () => navigate(index)));
 
       toggle.addEventListener("click", () => {
